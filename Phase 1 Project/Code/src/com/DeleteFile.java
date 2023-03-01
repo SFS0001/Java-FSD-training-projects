@@ -7,7 +7,8 @@ import java.util.Scanner;
 // subclass DeleteFile extends Super-class SearchFile for re-use the case-sensitive search method
 public class DeleteFile extends SearchFile {
 	
-	public void deleteFile () {
+	//limiting access to deleteFile from other packages with protected method
+	protected void deleteFile () {
 	System.out.println("\nPlease enter the file name to delete: ");
 	System.out.println("----------------------------------------");
 	Scanner sc = new Scanner(System.in);
